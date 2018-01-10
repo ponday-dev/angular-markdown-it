@@ -1,0 +1,6 @@
+<div class="wrap">
+  <div class="editor">
+    <textarea class="editor__input" placeholder="Input markdown..." (keyup)="onChangeText($event.target.value)"></textarea>
+  </div>
+  <div class="viewer" #markdown [innerHTML]="markdownText"></div>
+</div>
